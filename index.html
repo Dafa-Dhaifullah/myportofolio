@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Dafa</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <button id="tombol-dark-mode">Mode Gelap</button>
+        <h1>Dafa</h1>
+        <nav>
+            <ul>
+                <li><a href="#tentang-saya">Tentang Saya</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+    <main>
+        <section id="tentang-saya">
+            <h2>Tentang Saya</h2>
+            <img src="styles/assets/myphoto.jpg" alt="myphoto" class="profile-photo">
+            <p>Saya adalah seorang mahasiswa informatika dan memiliki ketertarikan pada web development.</p>
+        </section>
+        <section id="proyek">
+            <h2>Proyek Saya</h2>
+            <ul>
+                <li class="proyek-card">
+                    <h3>Website Manajemen Uang Kas</h3>
+                    <p>Sebuah Website untuk mencatat pembayaran uang kas kelas</p>
+                </li>
+                <li class="proyek-card">
+                    <h3>Website Prediksi Pekerjaan Masa depan</h3>
+                    <p>Sebuah Website seru-seruan untuk memprediksi Pekerjaan masa depan seseorang secara acak</p>
+                </li>
+            </ul>
+        </section>
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <form action="kontak-form">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+    </div>
+    <footer>
+        <p>&copy;2025 Dafa Dx</p>
+        </footer>
+    <script src="src/script.js"></script>
+</body>
+</html>

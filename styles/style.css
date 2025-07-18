@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    transition: background-color 0.3s, color 0.3s; /* Transisi untuk dark mode */
+}
+
+.container {
+    max-width: 960px; /* Menentukan lebar maksimal konten */
+    margin: 0 auto;   /* Menengahkan container */
+    padding: 0 1rem;  /* Memberi sedikit jarak di sisi kiri-kanan */
+}
+
+section {
+    padding: 2rem 0; /* Memberi jarak vertikal antar section */
+}
+
+/* --- Header & Navigasi --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+header nav ul {
+    display: flex; /* Hanya berlaku untuk UL di dalam NAV header */
+    list-style: none;
+}
+
+header nav li {
+    margin: 0 10px;
+}
+
+/* --- Konten --- */
+.profile-photo {
+    width: 200px; /* Atur lebar gambar di sini */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    display: block;
+    margin: 1rem auto;
+}
+
+.proyek-card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Bayangan yang lebih halus */
+    list-style-type: none; /* Menghilangkan bullet point dari li */
+}
+
+/* --- Form --- */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem; /* Jarak antar input */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* --- Dark Mode --- */
+body.dark-mode {
+    background-color: #222;
+    color: #f1f1f1;
+}
+
+body.dark-mode .proyek-card {
+    border-color: #444;
+    background-color: #333;
+}
+
+body.dark-mode header {
+    background-color: #333;
+    border-bottom-color: #444;
+}
