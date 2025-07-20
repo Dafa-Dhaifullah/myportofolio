@@ -48,6 +48,11 @@ header nav li {
     margin: 1rem auto;
 }
 
+.project-photo {
+    width: 200px;
+    margin-top: 5px;
+}
+
 .proyek-card {
     border: 1px solid #ddd;
     padding: 1.5rem;
