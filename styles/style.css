@@ -53,10 +53,17 @@ header nav li {
     margin-top: 5px;
 }
 
+.project-container {
+    display: flex;
+    justify-content: center;
+}
+
 .proyek-card {
     border: 1px solid #ddd;
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    height:250px;
+    width:450px;
+    margin: 5px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Bayangan yang lebih halus */
     list-style-type: none; /* Menghilangkan bullet point dari li */
